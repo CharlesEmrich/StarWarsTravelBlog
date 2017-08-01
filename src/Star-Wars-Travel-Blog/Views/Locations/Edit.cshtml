@@ -1,0 +1,30 @@
+﻿@model StarWarsTravelBlog.Models.Location
+
+<html>
+<head>
+    <title>Star Wars Travel Blog - Edit</title>
+</head>
+<body>
+    <h2>Edit</h2>
+    <hr />
+    <h4>Edit this task: @Html.DisplayFor(model => model.planet)</h4>
+
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.id)
+
+        @Html.LabelFor(model => model.planet)
+        @Html.EditorFor(model => model.planet)
+
+        @Html.LabelFor(model => model.biome)
+        @Html.EditorFor(model => model.biome)
+
+        @Html.LabelFor(model => model.region)
+        @Html.EditorFor(model => model.region)
+
+        <input type="submit" value="Save" />
+    }
+    <p>@Html.ActionLink("Back to list", "Index")</p>
+
+</body>
+</html>

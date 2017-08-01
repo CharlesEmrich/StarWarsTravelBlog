@@ -1,0 +1,25 @@
+﻿@model StarWarsTravelBlog.Models.Location
+
+<html>
+<head>
+    <title>Star Wars Travel Blog Location - Create</title>
+</head>
+<body>
+    <h2>Create</h2>
+    <hr />
+    <h4>Add a new location</h4>
+    @using (Html.BeginForm())
+    {
+        @Html.LabelFor(model => model.planet)
+        @Html.TextBoxFor(model => model.planet)
+
+        @Html.LabelFor(model => model.biome)
+        @Html.TextBoxFor(model => model.biome)
+
+        @Html.LabelFor(model => model.region)
+        @Html.TextBoxFor(model => model.region)
+        <input type="submit" value="Add new Location" />
+    }
+    <p>@Html.ActionLink("Back to list", "Index")</p>
+</body>
+</html>

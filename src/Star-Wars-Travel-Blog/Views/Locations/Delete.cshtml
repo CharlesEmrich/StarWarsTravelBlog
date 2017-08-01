@@ -1,0 +1,19 @@
+﻿@model StarWarsTravelBlog.Models.Location
+
+<html>
+<head>
+    <title>Star Wars Travel Blog - Delete</title>
+</head>
+<body>
+
+    <h2>Are you sure you want to delete this?</h2>
+    <hr />
+    @Html.DisplayNameFor(model => model.planet): @Html.DisplayFor(model => model.planet)
+    @using (Html.BeginForm())
+    {
+        <input type="submit" value="Delete" />
+    }
+    @Html.ActionLink("Back to List", "Index")
+</body>
+</html>
+}

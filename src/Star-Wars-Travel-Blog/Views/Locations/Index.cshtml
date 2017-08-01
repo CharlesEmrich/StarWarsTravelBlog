@@ -11,10 +11,14 @@
         @foreach (var listLocation in Model)
         {
             <li>
-                @Html.DisplayFor(modelLocation => listLocation.planet)
-                @Html.ActionLink("Details", "Details", new { id = listLocation.id})
+                @Html.DisplayFor(modelLocation => listLocation.planet) |
+                @Html.ActionLink("Edit", "Edit", new { id = listLocation.id }) |
+                @Html.ActionLink("Details", "Details", new { id = listLocation.id}) |
+                @Html.ActionLink("Delete", "Delete", new { id = listLocation.id })
             </li>
         }
     </ul>
+    <p>@Html.ActionLink("Add new Location", "Create")</p>
+
 </body>
 </html>
