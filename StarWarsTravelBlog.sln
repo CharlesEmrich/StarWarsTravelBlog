@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{85CAFD1C-FB90-46E5-9F84-A548A0D7DE8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2111ED33-EECA-4A72-89ED-B39B10807C35}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "StarWarsTravelBlog", "src\Star-Wars-Travel-Blog\StarWarsTravelBlog.xproj", "{A06ABEE3-6F6B-4C2D-8EAD-53FFCFC4A145}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A06ABEE3-6F6B-4C2D-8EAD-53FFCFC4A145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A06ABEE3-6F6B-4C2D-8EAD-53FFCFC4A145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A06ABEE3-6F6B-4C2D-8EAD-53FFCFC4A145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A06ABEE3-6F6B-4C2D-8EAD-53FFCFC4A145}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A06ABEE3-6F6B-4C2D-8EAD-53FFCFC4A145} = {85CAFD1C-FB90-46E5-9F84-A548A0D7DE8F}
+	EndGlobalSection
+EndGlobal

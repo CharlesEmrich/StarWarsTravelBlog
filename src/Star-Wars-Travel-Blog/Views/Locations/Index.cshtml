@@ -1,0 +1,20 @@
+﻿@model IEnumerable<StarWarsTravelBlog.Models.Location>
+
+<html>
+<head>
+    <title>Star Wars Travel Blog</title>
+</head>
+<body>
+    <h2>Star Wars Travel Blog</h2>
+    <h4>@Html.DisplayNameFor(model => model.planet)</h4>
+    <ul>
+        @foreach (var listLocation in Model)
+        {
+            <li>
+                @Html.DisplayFor(modelLocation => listLocation.planet)
+                @Html.ActionLink("Details", "Details", new { id = listLocation.id})
+            </li>
+        }
+    </ul>
+</body>
+</html>
