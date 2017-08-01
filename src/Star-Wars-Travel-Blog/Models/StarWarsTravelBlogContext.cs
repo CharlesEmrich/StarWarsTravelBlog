@@ -9,6 +9,8 @@ namespace StarWarsTravelBlog.Models
     public class StarWarsTravelBlogContext : DbContext
     {
         public virtual DbSet<Location> Locations { get; set; }
+        public virtual DbSet<Experience> Experiences { get; set; }
+        public virtual DbSet<Person> People { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Travel-Blog;integrated security=True");

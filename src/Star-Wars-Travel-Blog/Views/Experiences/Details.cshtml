@@ -1,0 +1,17 @@
+﻿@model StarWarsTravelBlog.Models.Experience
+
+<html>
+<head>
+    <title>Star Wars Travel Blog - Details</title>
+</head>
+<body>
+    <h2>Details</h2>
+    <hr/>
+   <h3>Description: </h3>@Html.DisplayFor(model => model.description)
+    <h3>Date: </h3>@Html.DisplayFor(model => model.date)
+    <h3>Person: </h3>@Html.DisplayFor(model => model.personId)
+    <h3>Location: </h3>@Html.DisplayFor(model => model.locationId)
+
+    <p>@Html.ActionLink("Back to list", "Index")</p>
+</body>
+</html>

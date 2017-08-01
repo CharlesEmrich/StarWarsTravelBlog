@@ -1,0 +1,24 @@
+﻿@model IEnumerable<StarWarsTravelBlog.Models.Experience>
+
+<html>
+<head>
+    <title>Star Wars Travel Blog</title>
+</head>
+<body>
+    <h2>Star Wars Travel Blog</h2>
+    <h4>@Html.DisplayNameFor(model => model.description)</h4>
+    <ul>
+        @foreach (var listExperience in Model)
+        {
+            <li>
+                @Html.DisplayFor(modelExperience => listExperience.description) @Html.DisplayFor(modelExperience => listExperience.date) |
+                @Html.ActionLink("Edit", "Edit", new { id = listExperience.id }) |
+                @Html.ActionLink("Details", "Details", new { id = listExperience.id}) |
+                @Html.ActionLink("Delete", "Delete", new { id = listExperience.id })
+            </li>
+        }
+    </ul>
+    <p>@Html.ActionLink("Add new Experience", "Create")</p>
+
+</body>
+</html>

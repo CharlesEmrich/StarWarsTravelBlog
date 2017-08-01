@@ -1,0 +1,33 @@
+﻿@model StarWarsTravelBlog.Models.Experience
+
+<html>
+<head>
+    <title>Star Wars Travel Blog - Edit</title>
+</head>
+<body>
+    <h2>Edit</h2>
+    <hr />
+    <h4>Edit this Experience: @Html.DisplayFor(model => model.description)</h4>
+
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.id)
+
+        <h3>Description</h3>
+        @Html.EditorFor(model => model.description)
+
+        <h3>Date</h3>
+        @Html.EditorFor(model => model.date)
+
+        <h3>Person</h3>
+        @Html.EditorFor(model => model.personId)
+
+        <h3>Location</h3>
+        @Html.EditorFor(model => model.locationId)
+
+        <input type="submit" value="Save" />
+    }
+    <p>@Html.ActionLink("Back to list", "Index")</p>
+
+</body>
+</html>

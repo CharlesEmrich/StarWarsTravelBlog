@@ -1,4 +1,4 @@
-﻿@model StarWarsTravelBlog.Models.Location
+﻿@model StarWarsTravelBlog.Models.Experience
 
 <html>
 <head>
@@ -8,7 +8,9 @@
 
     <h2>Are you sure you want to delete this?</h2>
     <hr />
-    <h3>@Html.DisplayFor(model => model.planet)</h3>
+    <h3>@Html.DisplayFor(model => model.description)</h3>
+    @using (Html.BeginForm())
+    <h3>@Html.DisplayFor(model => model.date)</h3>
     @using (Html.BeginForm())
     {
         <input type="submit" value="Delete" />
